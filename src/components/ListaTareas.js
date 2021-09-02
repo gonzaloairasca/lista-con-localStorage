@@ -47,6 +47,7 @@ function ListaTareas() {
 
   return (
     <div>
+      <h1>que onda amigo</h1>
       <Formulario onSubmit={agregarTarea} />
       <Tareas
         tareas={tareas}
