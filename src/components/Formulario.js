@@ -14,13 +14,28 @@ function Formulario(props) {
     setInput("");
   };
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        placeholder="agrega tu tarea"
-        onChange={handleChange}
-        value={input}
-      />
-      <button>AGREGAR</button>
+    <form onSubmit={handleSubmit} className="todo-form">
+      {props.editar ? (
+        <>
+          <input
+            className="todo-input edit"
+            placeholder="aca pones lo que tenes k aser"
+            onChange={handleChange}
+            value={input}
+          />
+          <button className="todo-button edit">EDITAR</button>
+        </>
+      ) : (
+        <>
+          <input
+            className="todo-input"
+            placeholder="aca pones lo k tenes que aser"
+            onChange={handleChange}
+            value={input}
+          />
+          <button className="todo-button">AGREGAR</button>
+        </>
+      )}
     </form>
   );
 }

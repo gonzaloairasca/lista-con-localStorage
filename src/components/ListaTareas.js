@@ -46,8 +46,8 @@ function ListaTareas() {
   }, [tareas]);
 
   return (
-    <div>
-      <h1>que onda amigo</h1>
+    <>
+      <h1>¿Que tenes pa hacer kpx?</h1>
       <Formulario onSubmit={agregarTarea} />
       <Tareas
         tareas={tareas}
@@ -55,7 +55,7 @@ function ListaTareas() {
         actualizacionTarea={actualizacionTarea}
         tareaCompletada={tareaCompletada}
       />
-    </div>
+    </>
   );
 }
 

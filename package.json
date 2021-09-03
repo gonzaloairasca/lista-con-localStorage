@@ -2,7 +2,7 @@
   "name": "lista-de-tareas",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gonzaloairasca.github.io/lista-de-tareas-con-localStorage",
+  "homepage": "https://gonzaloairasca.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",

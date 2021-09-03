@@ -27,14 +27,21 @@ function Tareas({
   }
 
   return tareas.map((tarea, index) => (
-    <div key={index} className={tarea.isComplete ? "complete" : ""}>
+    <div
+      key={index}
+      className={tarea.isComplete ? "todo-row complete" : "todo-row"}
+    >
       <div key={tarea.id} onClick={() => tareaCompletada(tarea.id)}>
         {tarea.text}
       </div>
 
-      <div className="iconos">
-        <AiOutlineCloseCircle onClick={() => eliminarTarea(tarea.id)} />
+      <div className="icons">
+        <AiOutlineCloseCircle
+          className="delete-icon"
+          onClick={() => eliminarTarea(tarea.id)}
+        />
         <AiOutlineEdit
+          className="edit-icon"
           onClick={() => setEditar({ id: tarea.id, value: tarea.text })}
         />
       </div>
